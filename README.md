@@ -28,7 +28,7 @@ To use this template:
 
 ## Preview
 
-[Insert a screenshot or link to your resume PDF here]
+![Resume Preview](/resume_preview.png)
 
 ## Customization
 

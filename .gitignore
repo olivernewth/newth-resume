@@ -1,6 +1,3 @@
-# Archieve
-Archieve/
-
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -14,6 +11,8 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+*.synctex.gz
+*.fdb_latexmk
 
 # github action result
 semicolon_delimited_script

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1726982980.15008 "/Users/ollie/Documents/GitHub/resume/newth_resume.tex" "newth_resume.pdf" "newth_resume" 1726982980.7869 0
-  "/Users/ollie/Documents/GitHub/resume/newth_resume.tex" 1726982979.9787 11356 81a6a2b216835f0ef793ef02488dd449 ""
+["pdflatex"] 1726984164.03893 "/Users/ollie/Documents/GitHub/resume/newth_resume.tex" "newth_resume.pdf" "newth_resume" 1726984164.65734 0
+  "/Users/ollie/Documents/GitHub/resume/newth_resume.tex" 1726984163.80033 11356 81a6a2b216835f0ef793ef02488dd449 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -86,9 +86,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1724915401.04483 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1724915320 8221429 1f9f2a024d1da0b6e28dbf22d89db6ae ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "newth_resume.aux" 1726982980.72369 780 9a2316658549a9b4f53043250439a16b "pdflatex"
-  "newth_resume.out" 1726982980.7245 484 fc8620689a8f2098baf60f2d0cbfd5be "pdflatex"
-  "newth_resume.tex" 1726982979.9787 11356 81a6a2b216835f0ef793ef02488dd449 ""
+  "newth_resume.aux" 1726984164.61247 780 9a2316658549a9b4f53043250439a16b "pdflatex"
+  "newth_resume.out" 1726984164.61297 484 fc8620689a8f2098baf60f2d0cbfd5be "pdflatex"
+  "newth_resume.tex" 1726984163.80033 11356 81a6a2b216835f0ef793ef02488dd449 ""
   (generated)
   "newth_resume.aux"
   "newth_resume.log"
