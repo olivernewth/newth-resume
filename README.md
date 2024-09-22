@@ -20,32 +20,6 @@ I created this template to:
 
 ## Quick Start
 
-Sure, let's create a detailed quick start guide for your LaTeX resume template that includes instructions for setting up and using Visual Studio Code (VS Code).
-
----
-
-# Oliver Grosvenor-Newth's Resume
-
-## Overview
-
-This repository contains a LaTeX template for my AI Product Manager resume. It's designed to showcase my experience in AI, machine learning, and large language models, with a focus on ethical AI development and product management in the tech industry.
-
-## Purpose
-
-I created this template to:
-1. Maintain a consistent and professional format for my resume
-2. Easily update and version control my career information
-3. Share my resume-building process with friends and colleagues in the tech industry
-
-## Key Features
-
--  Single-page, one-column layout optimized for readability
--  Sections include Summary, Experience, Education, Skills, and Awards & Recognition
--  Emphasis on AI and machine learning experience, ethical AI practices, and product management achievements
--  Customized to align with senior product management roles in AI-focused companies
-
-## Quick Start
-
 To use this template, follow these steps:
 
 ### 1. Clone the Repository
