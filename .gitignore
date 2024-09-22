@@ -13,6 +13,7 @@
 .*.lb
 *.synctex.gz
 *.fdb_latexmk
+.DS_Store
 
 # github action result
 semicolon_delimited_script
