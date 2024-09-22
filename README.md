@@ -2,11 +2,8 @@
 
 ## Overview
 
-This repository contains a LaTeX template for my AI Product Manager resume. It's designed to showcase my experience in AI, machine learning, and large language models, with a focus on ethical AI development and product management in the tech industry.
+This repository contains a LaTeX template for my AI Product Manager resume. It's designed to showcase my experience in AI, machine learning, and large language models, with a focus on ethical AI development and product management in the tech industry. I created this template to:
 
-## Purpose
-
-I created this template to:
 1. Maintain a consistent and professional format for my resume
 2. Easily update and version control my career information
 3. Share my resume-building process with friends and colleagues in the tech industry
@@ -17,6 +14,8 @@ I created this template to:
 - Sections include Summary, Experience, Education, Skills, and Awards & Recognition
 - Emphasis on AI and machine learning experience, ethical AI practices, and product management achievements
 - Customized to align with senior product management roles in AI-focused companies
+## Preview 
+![Preview of Resume](/resume_preview.png)
 
 ## Quick Start
 
