@@ -17,3 +17,34 @@
 
 # github action result
 semicolon_delimited_script
+context/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.dvi
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Build directories
+_minted*/
+build/

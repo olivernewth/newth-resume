@@ -1,0 +1,184 @@
+\ProvidesPackage{../../template/resume}
+
+% Basic required packages
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+\usepackage{needspace}
+
+% Set Helvetica as the default font
+\renewcommand{\familydefault}{\sfdefault}
+
+% Define spacing variables
+% Spacing between name and title in header
+\newcommand{\headerSpacing}{12pt}
+% Spacing between title and contact info in header
+\newcommand{\titleSpacing}{4pt}
+% Spacing after contact info in header
+\newcommand{\contactSpacing}{20pt}
+% Spacing before each section heading
+\newcommand{\sectionBeforeSpacing}{12pt}
+% Spacing after each section heading
+\newcommand{\sectionAfterSpacing}{8pt}
+% Spacing between entries in experience section
+\newcommand{\entrySpacing}{0pt}
+% Spacing between items in outer experience list
+\newcommand{\outerListItemSep}{0pt}
+% Spacing between items in inner experience list
+\newcommand{\innerListItemSep}{4pt}
+
+% Adjust margins to maximize usable space on page
+% Reduce left margin by 1 inch
+\addtolength{\oddsidemargin}{-1.0in}
+% Reduce right margin by 1 inch
+\addtolength{\evensidemargin}{-1.0in}
+% Increase text width by 2 inches
+\addtolength{\textwidth}{2.0in}
+% Reduce top margin by 1 inch
+\addtolength{\topmargin}{-1.0in}
+% Increase text height by 2 inches
+\addtolength{\textheight}{2.0in}
+
+% Remove default paragraph indentation and spacing
+% Set paragraph indentation to 0
+\setlength{\parindent}{0pt}
+% Set spacing between paragraphs to 0
+\setlength{\parskip}{0pt}
+% Define custom commands for header info
+\def\@name{}
+\def\@titleText{}
+\def\@email{}
+\def\@phone{}
+\def\@location{}
+\def\@website{}
+\def\@websiteDisplay{}
+\def\@linkedin{}
+\def\@linkedinDisplay{}
+
+% Define a new command for the title
+\newcommand{\titleText}[1]{\def\@titleText{#1}}
+
+\newcommand{\name}[1]{\def\@name{#1}}
+\newcommand{\email}[1]{\def\@email{#1}}
+\newcommand{\phone}[1]{\def\@phone{#1}}
+\newcommand{\location}[1]{\def\@location{#1}}
+\newcommand{\website}[2]{\def\@website{#1}\def\@websiteDisplay{#2}}
+\newcommand{\linkedin}[2]{\def\@linkedin{#1}\def\@linkedinDisplay{#2}}
+
+% Header command with adjusted spacing and title
+\newcommand{\makeheader}{
+    \begin{flushleft}
+        {\Huge\textbf{\@name}}\\[\headerSpacing]
+        \textbf{\@titleText}\\[\titleSpacing]
+        \@location\ | \@phone\ | \@email\ | \href{\@website}{\@websiteDisplay}\ | \href{\@linkedin}{\@linkedinDisplay}\\[\contactSpacing]
+    \end{flushleft}
+}
+
+% Section formatting - left aligned, no caps, proper spacing
+\titleformat{\section}
+{\large\bfseries}  % Format
+{}                 % Label
+{0em}              % Sep
+{}                 % Before-code
+[\customtitlerule]       % After-code, adds a line
+
+% Adjust the thickness of the line
+\newcommand{\customtitlerule}{\vspace{0.25em}\hrule height 1pt \vspace{0.25em}}
+
+\titlespacing{\section}
+{0pt}             % Left
+{\sectionBeforeSpacing} % Before
+{\sectionAfterSpacing}  % After
+
+% Experience entry formatting with right-aligned dates
+\newcommand{\experienceEntry}[4]{
+    \needspace{6\baselineskip}
+    \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{#2} \\ % Italicized location
+        \textbf{#3} & \textit{#4} % Italicized dates
+    \end{tabular*}\\[-\entrySpacing]
+}
+
+% Experience bullet point with less spacing
+\newcommand{\experienceItem}[2]{
+    \needspace{2\baselineskip}
+    \item[-] \textbf{#1:} #2
+}
+
+% Education entry formatting
+\newcommand{\educationEntry}[4]{
+    \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textbf{#3} & #4
+    \end{tabular*}\\[8pt]
+}
+
+% Skills entry with less spacing
+\newcommand{\skillEntry}[2]{
+    \item[-] \textbf{#1:} #2
+}
+
+% Award entry with less spacing
+\newcommand{\awardEntry}[2]{
+    \item[-] \textbf{#1:} #2
+}
+
+% List environments with adjusted spacing
+\newenvironment{outerList}{
+    \begin{itemize}[
+            leftmargin=-6pt,
+            itemsep=\outerListItemSep,
+            parsep=0pt,
+            label={},
+            topsep=0pt]
+        }{
+    \end{itemize}
+}
+
+\newenvironment{innerList}{
+    \begin{itemize}[
+            leftmargin=18pt,
+            itemsep=\innerListItemSep,
+            parsep=0pt,
+            label={},
+            topsep=4pt]
+        }{
+    \end{itemize}
+}
+
+% PDF metadata
+\AtBeginDocument{
+    \hypersetup{
+        pdftitle={Resume},
+        pdfauthor={\@name},
+        pdfsubject={Resume}
+    }
+    % Remove page numbers
+    \pagenumbering{gobble}
+}
+
+% Custom colors - all black
+\definecolor{linkcolor}{RGB}{0,0,0}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Global document settings
+\raggedright
+\raggedbottom
